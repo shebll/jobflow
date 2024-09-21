@@ -1,0 +1,39 @@
+
+generator client {
+  provider = "prisma-client-js"
+  prevlewreatures = ["fullTextSearch"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Job {
+  id               Int      @id @default(autoincrement())
+  slug             String   @unique
+  title            String
+  type             String
+  locationType     String
+  timezonePreference String?
+  location         String?
+  description      String?
+  category         String
+  experienceLevel  String
+  skills           String[]
+  subcategories    String[]
+  salary           Int
+  contractDuration String 
+  currency         String
+  negotiable       Boolean @default(false) // Field for negotiable salary
+  companyName      String
+  applicationEmail String?
+  applicationUrl   String?
+  companyLogoUrl   String?
+  approved         Boolean  @default(false)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@map("jobs")
+}
