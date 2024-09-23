@@ -1,348 +1,615 @@
 const placeholderJobs = [
   {
-    title: "Full-Stack Developer at Stripe",
+    id: 1,
+    slug: "senior-full-stack-developer-techinnovate",
+    title: "Senior Full-Stack Developer",
     type: "Full-time",
-    companyName: "Stripe",
     locationType: "Remote",
-    location: "San Francisco, California, United States",
-    applicationEmail: "apply@stripe.com",
-    applicationUrl: "https://stripe.com/apply",
-    slug: "full-stack-developer-at-stripe-1",
-    salary: 150000,
-    approved: true,
+    timezonePreference: "UTC-5 to UTC-8",
+    location: "United States",
     description: `
-**About Stripe**
+# Senior Full-Stack Developer
 
-Stripe is a global technology company that builds economic infrastructure for the internet. Our suite of products and services are designed to power commerce for online businesses of all sizes. At Stripe, we're looking for passionate, creative, and innovative developers to help build the next generation of payment platforms.
+We're looking for a seasoned Full-Stack Developer to join our innovative team. In this role, you'll be responsible for developing and maintaining complex web applications, from the database to the user interface.
 
-**Job Description**
+## Key Responsibilities:
+- Design and implement scalable backend services using Node.js and Express
+- Develop responsive and interactive front-end interfaces using React and Redux
+- Optimize application performance and implement security best practices
+- Collaborate with cross-functional teams to define and implement new features
+- Mentor junior developers and contribute to code reviews
 
-As a Full-Stack Developer at Stripe, you will be working on cutting-edge technology to build and maintain scalable, efficient, and reliable software solutions. You'll collaborate with a team of talented engineers, designers, and product managers to deliver exceptional user experiences.
+## Requirements:
+- 5+ years of experience in full-stack development
+- Strong proficiency in JavaScript, including ES6+ features
+- Experience with React, Redux, Node.js, and Express
+- Familiarity with SQL and NoSQL databases
+- Knowledge of AWS or other cloud platforms
+- Excellent problem-solving and communication skills
 
-**Key Responsibilities**
-
-- Design, develop, test, deploy, maintain, and improve software across the stack.
-- Work closely with other engineering teams to integrate and develop new features.
-- Contribute to the full software development lifecycle, including requirements analysis, architecture, design, coding, testing, and deployment.
-- Optimize applications for maximum speed and scalability.
-- Participate in code reviews and mentor junior developers.
-
-**Qualifications**
-
-- Bachelor's degree in Computer Science, Engineering, or a related field, or equivalent practical experience.
-- 3+ years of experience in full-stack development.
-- Proficiency in one or more general-purpose programming languages including but not limited to: Ruby, Java, JavaScript, Python.
-- Experience with front-end technologies such as React, Angular, or Vue.js.
-- Familiarity with server-side frameworks like Ruby on Rails, Django, or Node.js.
-- Knowledge of database technologies such as MySQL, PostgreSQL, and MongoDB.
-- Strong understanding of web technologies and architectures.
-- Excellent problem-solving skills and attention to detail.
-
-**Benefits**
-
-- Competitive salary and equity package.
-- Health, dental, and vision insurance.
-- Generous vacation and parental leave policies.
-- 401(k) plan with employer match.
-- Flexible work arrangements.
-- Continuous learning and development opportunities.
-
-Stripe is an equal opportunity employer. We value diversity and are committed to creating an inclusive environment for all employees.
-`,
+Join us in creating cutting-edge web applications that make a difference!
+    `,
+    category: "Software Development",
+    experienceLevel: "Senior",
+    skills: [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "AWS",
+      "SQL",
+      "NoSQL",
+    ],
+    subcategories: [
+      "Web Development",
+      "Backend Development",
+      "Frontend Development",
+    ],
+    salary: 130000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "TechInnovate Solutions",
+    applicationEmail: "careers@techinnovate.com",
+    applicationUrl: "https://techinnovate.com/careers",
+    companyLogoUrl: "https://techinnovate.com/logo.png",
+    approved: true,
+    createdAt: new Date("2023-09-15T10:00:00Z"),
+    updatedAt: new Date("2023-09-15T10:00:00Z"),
   },
   {
-    title: "Full-Stack Developer at Vercel",
-    type: "Full-time",
-    companyName: "Vercel",
-    locationType: "Hybrid",
-    location: "San Francisco, California, United States",
-    applicationEmail: "apply@vercel.com",
-    applicationUrl: "https://vercel.com/apply",
-    slug: "full-stack-developer-at-vercel-2",
-    salary: 120000,
-    approved: true,
-    description: `
-**About Vercel:** 
-
-Vercel is a cloud platform for static sites and Serverless Functions that fits perfectly with your workflow. It enables developers to host Jamstack websites with ease.
-
-Job Description: We're looking for a talented Full-Stack Developer to join our dynamic team. As a Full-Stack Developer at Vercel, you'll work on a variety of projects, building high-quality, scalable web applications. You'll collaborate with a team of designers, developers, and product managers to push the boundaries of what's possible on the web.
-
-**Key Responsibilities:**
-
--   Develop and maintain front-end and back-end components of our web applications.
--   Collaborate with cross-functional teams to define, design, and ship new features.
--   Ensure the performance, quality, and responsiveness of applications.
--   Identify and correct bottlenecks and fix bugs.
--   Help maintain code quality, organization, and automatization.
-
-**Qualifications:**
-
--   Bachelor's degree in Computer Science or a related field, or equivalent experience.
--   Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model.
--   Experience with React.js and its core principles.
--   Experience with popular React.js workflows (such as Flux or Redux).
--   Familiarity with newer specifications of EcmaScript.
--   Experience with data structure libraries (e.g., Immutable.js).
--   Knowledge of isomorphic React is a plus.
--   Experience with RESTful APIs.
--   Knowledge of modern authorization mechanisms, such as JSON Web Token.
--   Familiarity with modern front-end build pipelines and tools.
--   Experience with common front-end development tools such as Babel, Webpack, NPM, etc.
--   A knack for benchmarking and optimization.
--   Familiarity with code versioning tools (such as Git).
-
-**Benefits:**
-
--   Competitive salary and equity.
--   Health, dental, and vision insurance.
--   Unlimited vacation policy.
--   Home office stipend.
--   Professional development allowance.
-
-Vercel is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
-
-Join us at Vercel and be a part of shaping the future of web development!
-`,
-  },
-  {
-    title: "ChatGPT Backend Developer at OpenAI",
-    type: "Part-time",
-    companyName: "OpenAI",
-    locationType: "On-site",
-    location: "San Francisco, California, United States",
-    applicationUrl: "https://openai.com/apply",
-    slug: "chatgpt-backend-developer-at-openai-3",
-    salary: 250000,
-    approved: true,
-    description: `
-**About OpenAI:**
-
-OpenAI is an AI research and deployment company dedicated to ensuring that artificial general intelligence (AGI) benefits all of humanity. We're leading the field in developing advanced AI models, like ChatGPT.
-
-**Job Description:**
-
-We are seeking a skilled ChatGPT Backend Developer to join our innovative team. In this role, you'll contribute to the development and optimization of the ChatGPT platform, focusing on backend systems that power conversational AI. You'll collaborate with a talented team of researchers, engineers, and product managers to enhance ChatGPT's capabilities and scalability.
-
-**Key Responsibilities:**
-
--   Design, build, and maintain efficient, reusable, and reliable backend code for ChatGPT.
--   Work closely with AI researchers to implement and scale new features and models.
--   Improve the performance and reliability of our systems as they scale.
--   Manage individual project priorities, deadlines, and deliverables.
--   Ensure the best possible performance, quality, and responsiveness of applications.
--   Identify bottlenecks and bugs, and devise solutions to these problems.
-
-**Qualifications:**
-
--   Bachelor's or Master's degree in Computer Science, Engineering, or a related field.
--   Strong experience in backend development, particularly with Python.
--   Experience with AI technologies, machine learning, or natural language processing is highly desirable.
--   Knowledge of cloud services (AWS, Google Cloud, or Azure) and serverless architecture.
--   Experience with database technology such as SQL, NoSQL, and Data Warehousing.
--   Familiarity with Docker, Kubernetes, and CI/CD pipelines.
--   Proficiency in code versioning tools, such as Git.
--   Strong problem-solving skills and a willingness to learn new technologies.
-
-**Benefits:**
-
--   Competitive salary and generous stock options.
--   Comprehensive health, dental, and vision insurance.
--   Flexible work schedule and location.
--   Generous vacation and leave policies.
--   Education and conference stipends.
-
-OpenAI is committed to diversity in its workforce and is proud to be an equal opportunity employer.
-
-If you're passionate about AI and want to contribute to cutting-edge technology that impacts the world, join us at OpenAI!
-`,
-  },
-  {
-    title: "Intern at Coding in Flow",
-    type: "Internship",
-    companyName: "Coding in Flow",
-    locationType: "Remote",
-    applicationUrl: "https://codinginflow.com",
-    slug: "intern-at-coding-in-flow-4",
-    salary: 500,
-    approved: true,
-    description: `
-**Help build the best coding tutorials**
-
-I might not be able to pay you a lot, but I can offer you a lot of experience and a lot of fun. I'm looking for someone who is passionate about coding and wants to help me create the best coding tutorials on YouTube.
-`,
-  },
-  {
-    title: "Contractor at SmartDiary.co",
+    id: 2,
+    slug: "ux-ui-designer-designcraft",
+    title: "UX/UI Designer",
     type: "Contract",
-    companyName: "SmartDiary.co",
-    locationType: "Remote",
-    applicationUrl: "https://smartdiary.co",
-    slug: "contractor-at-smartdiary-co-5",
-    salary: 30000,
-    approved: true,
+    locationType: "Hybrid",
+    timezonePreference: "UTC to UTC+3",
+    location: "London, United Kingdom",
     description: `
-**Help build the future of journaling**
+# UX/UI Designer
 
-Smart Diary is the intelligent journaling app with AI integration. I'm looking for someone who can help me build this website. 
+We're seeking a talented UX/UI Designer to help create intuitive and visually appealing interfaces for our digital products. This is a 6-month contract position with the possibility of extension.
 
-Try it out for free at [https://smartdiary.co](https://smartdiary.co).
-`,
+## Key Responsibilities:
+- Create user-centered designs by understanding business requirements and user feedback
+- Develop wireframes, prototypes, and high-fidelity mockups
+- Conduct user research and usability testing to inform design decisions
+- Collaborate with product managers and developers to implement designs
+- Ensure consistency in design language across all our products
+
+## Requirements:
+- 3+ years of experience in UX/UI design for digital products
+- Proficiency in design tools such as Figma, Sketch, or Adobe XD
+- Strong portfolio demonstrating your design process and problem-solving skills
+- Experience with design systems and component libraries
+- Knowledge of accessibility standards and responsive design principles
+
+Join our team and help shape the future of our digital experiences!
+    `,
+    category: "Design",
+    experienceLevel: "Mid-Level",
+    skills: [
+      "UI Design",
+      "UX Design",
+      "Figma",
+      "Sketch",
+      "User Research",
+      "Prototyping",
+    ],
+    subcategories: ["Product Design", "Interaction Design", "Visual Design"],
+    salary: 65000,
+    contractDuration: "6 months",
+    currency: "GBP",
+    negotiable: true,
+    companyName: "DesignCraft Digital",
+    applicationEmail: "hello@designcraft.co.uk",
+    applicationUrl: "https://designcraft.co.uk/jobs",
+    companyLogoUrl: "https://designcraft.co.uk/brand/logo.svg",
+    approved: true,
+    createdAt: new Date("2023-09-16T14:30:00Z"),
+    updatedAt: new Date("2023-09-16T14:30:00Z"),
   },
   {
-    title: "Software Engineer at Microsoft",
-    type: "Temporary",
-    companyName: "Microsoft",
-    locationType: "On-site",
-    location: "Redmond, Washington, United States",
-    applicationEmail: "applications@microsoft.com",
-    applicationUrl: "https://careers.microsoft.com",
-    slug: "software-engineer-at-microsoft-6",
-    salary: 180000,
-    approved: true,
-    description: `
-**About Microsoft:**
-
-Microsoft is a global leader in software, services, devices, and solutions that help people and businesses realize their full potential. Renowned for products like Windows, Office, and Azure, Microsoft is continually innovating in the field of technology.
-Job Description: We are looking for a talented and dedicated Software Engineer Contractor to contribute to Microsoft's dynamic and diverse projects. In this role, you will be responsible for developing and maintaining software applications, collaborating with various teams to bring innovative solutions to life. This is a contract position with the potential for future long-term opportunities.
-
-**Key Responsibilities:**
-
--   Design, develop, and implement software solutions based on project requirements.
--   Collaborate with cross-functional teams to define and develop new features.
--   Ensure the performance, quality, and responsiveness of applications.
--   Diagnose, troubleshoot, and resolve software issues.
--   Write clean, maintainable, and efficient code.
--   Participate in code reviews and contribute to team meetings.
--   Stay abreast of new technologies and industry best practices.
-
-**Qualifications:**
-
--   Bachelor's degree in Computer Science, Engineering, or a related field.
--   Proven experience as a Software Engineer, with a strong background in software development.
--   Proficiency in one or more programming languages (e.g., C#, Java, Python, JavaScript).
--   Experience with cloud services (Azure, AWS, or Google Cloud).
--   Strong understanding of software development methodologies.
--   Excellent problem-solving and analytical skills.
--   Effective communication and teamwork skills.
--   Ability to work independently and manage time effectively.
-
-**Benefits:**
-
--   Competitive hourly rate.
--   Flexible work hours and remote work options.
--   Exposure to cutting-edge technology and projects.
--   Networking opportunities within Microsoft.
--   Access to Microsoft resources and learning platforms.
-
-Microsoft is an equal opportunity employer and supports workforce diversity.
-
-As a Microsoft contractor, you'll have the opportunity to work on exciting projects and make a significant impact in the tech world. Join us and be a part of Microsoft's innovative journey!
-`,
-  },
-  {
-    title: "Full-Stack Developer at Apple",
+    id: 3,
+    slug: "machine-learning-engineer-ai-frontiers",
+    title: "Machine Learning Engineer",
     type: "Full-time",
-    companyName: "Apple Inc.",
     locationType: "Hybrid",
-    location: "Cupertino, California, United States",
-    applicationUrl: "https://apple.com/apply",
-    slug: "full-stack-developer-at-apple-7",
-    salary: 200000,
-    approved: true,
+    timezonePreference: "UTC-8 to UTC-5",
+    location: "San Francisco, CA, United States",
     description: `
-**About Apple:**
+# Machine Learning Engineer
 
-Apple is a pioneer in personal technology and a global leader in innovation, known for its iconic products like the iPhone, iPad, and Mac. Our mission is to create products that enrich people's lives and help them achieve their dreams.
+Join our AI team to develop cutting-edge machine learning solutions that solve real-world problems. We're looking for a talented ML Engineer to help us push the boundaries of what's possible with AI.
 
-**Job Description:**
+## Key Responsibilities:
+- Design, develop, and deploy machine learning models
+- Collaborate with data scientists and software engineers to integrate ML models into production systems
+- Optimize ML algorithms for performance and scalability
+- Stay up-to-date with the latest advancements in machine learning and AI
+- Contribute to research papers and open-source projects
 
-We are seeking a Full-Stack Developer to join our forward-thinking development team at Apple. In this role, you'll be responsible for building and maintaining software that upholds the quality and innovation Apple is known for. You will play a key role in developing both front-end and back-end components of our applications, working closely with a team of world-class engineers and designers.
+## Requirements:
+- Masters or PhD in Computer Science, Machine Learning, or related field
+- Strong programming skills in Python and experience with ML frameworks (TensorFlow, PyTorch)
+- Experience with deep learning, natural language processing, or computer vision
+- Familiarity with cloud platforms (preferably GCP or AWS) for ML deployment
+- Strong mathematical background in linear algebra, calculus, and statistics
+- Excellent problem-solving skills and ability to work in a fast-paced environment
 
-**Key Responsibilities:**
-
--   Develop, test, and maintain robust, scalable, high-quality software for our technology products.
--   Work on both front-end and back-end development of Apple's internal web applications.
--   Collaborate with cross-functional teams to define, design, and ship new features.
--   Ensure the performance, quality, and responsiveness of applications.
--   Identify and correct bottlenecks and fix bugs.
--   Continuously discover, evaluate, and implement new technologies to maximize development efficiency.
-
-**Qualifications:**
-
--   Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.
--   Strong experience in full-stack development, particularly in languages like JavaScript, Python, Ruby, or Java.
--   Proficiency with front-end frameworks such as React, Angular, or Vue.js.
--   Experience with back-end development and RESTful APIs.
--   Knowledge of database technologies (SQL, NoSQL).
--   Familiarity with cloud services (AWS, Azure, or GCP).
--   Excellent problem-solving, analytical, and communication skills.
--   Passion for Apple's mission and products.
-
-**Benefits:**
-
--   Competitive salary and stock options.
--   Health, dental, and vision insurance.
--   Wellness and fitness programs.
--   Onsite cafeterias and healthy food options.
--   Professional development opportunities.
--   Employee product discounts.
-
-Apple is an equal opportunity employer committed to diversity and inclusion.
-
-Join Apple and be a part of a team that's dedicated to making a difference in the world through technology and innovation!
-`,
+Join us in shaping the future of AI technology!
+    `,
+    category: "Artificial Intelligence",
+    experienceLevel: "Senior",
+    skills: [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision",
+      "GCP",
+      "AWS",
+    ],
+    subcategories: ["Machine Learning", "Deep Learning", "AI Research"],
+    salary: 180000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "AI Frontiers",
+    applicationEmail: "careers@aifrontiers.com",
+    applicationUrl: "https://aifrontiers.com/careers",
+    companyLogoUrl: "https://aifrontiers.com/logo.png",
+    approved: false,
+    createdAt: new Date("2023-09-17T09:15:00Z"),
+    updatedAt: new Date("2023-09-17T09:15:00Z"),
   },
   {
-    title: "Junior Web Developer at Shopify",
-    type: "Part-time",
-    companyName: "Shopify",
-    locationType: "Hybrid",
-    location: "Ottawa, Ontario, Canada",
-    applicationEmail: "career@shopify.com",
-    applicationUrl: "https://shopify.com/apply",
-    slug: "junior-web-developer-at-shopify-8",
-    salary: 90000,
-    approved: true,
+    id: 4,
+    slug: "blockchain-developer-blockchain-innovations",
+    title: "Blockchain Developer",
+    type: "Contract",
+    locationType: "Remote",
+    timezonePreference: null,
+    location: "Worldwide",
     description: `
-**About Shopify:**
+# Blockchain Developer
 
-Shopify is a leading global commerce company, providing trusted tools to start, grow, market, and manage a retail business of any size. Shopify makes commerce better for everyone with a platform and services that are engineered for reliability while delivering a better shopping experience for consumers everywhere.
+We are looking for an experienced Blockchain Developer to join our team on a 12-month contract. You'll be working on cutting-edge blockchain projects, developing smart contracts, and contributing to the decentralized future of finance.
 
-**Job Description:**
+## Key Responsibilities:
+- Design and implement smart contracts for various blockchain platforms (Ethereum, Binance Smart Chain, etc.)
+- Develop and maintain decentralized applications (DApps)
+- Integrate blockchain solutions with existing systems and APIs
+- Ensure the security and efficiency of blockchain implementations
+- Collaborate with the team to troubleshoot and resolve technical issues
+- Stay informed about the latest developments in blockchain technology
 
-We are looking for a part-time Junior Web Developer to join our development team. This role is ideal for someone who is passionate about web development, eager to learn, and looking to gain extensive experience in a dynamic e-commerce environment. You will be assisting in the development and maintenance of Shopify's web-based projects and collaborating with experienced developers.
+## Requirements:
+- Strong experience in blockchain development, particularly with Ethereum
+- Proficiency in Solidity and web3.js
+- Familiarity with other blockchain platforms (e.g., Binance Smart Chain, Polkadot)
+- Strong understanding of cryptography and blockchain consensus mechanisms
+- Experience with full-stack development (Node.js, React)
+- Knowledge of best practices in smart contract security
+- Ability to work independently and manage time effectively in a remote setting
 
-**Key Responsibilities:**
+Join us in building the future of decentralized technology!
+    `,
+    category: "Blockchain",
+    experienceLevel: "Senior",
+    skills: [
+      "Solidity",
+      "Ethereum",
+      "Smart Contracts",
+      "web3.js",
+      "Node.js",
+      "React",
+    ],
+    subcategories: ["DeFi", "Smart Contracts", "Cryptocurrency"],
+    salary: 120000,
+    contractDuration: "12 months",
+    currency: "USD",
+    negotiable: true,
+    companyName: "BlockChain Innovations",
+    applicationEmail: "talent@bcinnovations.io",
+    applicationUrl: "https://bcinnovations.io/careers",
+    companyLogoUrl: "https://bcinnovations.io/images/logo.png",
+    approved: true,
+    createdAt: new Date("2023-09-18T11:45:00Z"),
+    updatedAt: new Date("2023-09-18T11:45:00Z"),
+  },
+  {
+    id: 5,
+    slug: "data-scientist-analytics-pro",
+    title: "Data Scientist",
+    type: "Full-time",
+    locationType: "Hybrid",
+    timezonePreference: "UTC-5 to UTC-8",
+    location: "New York, NY, United States",
+    description: `
+# Data Scientist
 
--   Assist in developing and maintaining Shopify's web applications.
--   Write clean, maintainable, and efficient code under the guidance of senior developers.
--   Collaborate with the team to design, develop, and implement new features and functionalities.
--   Participate in code reviews to maintain high-quality code standards.
--   Troubleshoot and fix bugs reported by users or team members.
--   Stay up-to-date with emerging trends and technologies in web development.
+Join our data science team to uncover insights that drive business decisions. We're looking for a talented Data Scientist to help us leverage our data assets and create value through advanced analytics.
 
-**Qualifications:**
+## Key Responsibilities:
+- Develop and implement complex machine learning models
+- Conduct statistical analysis and hypothesis testing
+- Create data visualizations to communicate findings effectively
+- Collaborate with cross-functional teams to identify and solve business problems
+- Stay current with the latest advancements in data science and machine learning
 
--   Currently pursuing or recently completed a degree in Computer Science, Web Development, or a related field.
--   Basic understanding of web development technologies, including HTML, CSS, JavaScript, and at least one server-side language (e.g., Ruby, Python).
--   Familiarity with version control tools like Git.
--   Eagerness to learn and ability to grasp new concepts quickly.
--   Good problem-solving skills and attention to detail.
--   Strong communication and teamwork abilities.
+## Requirements:
+- Masters or PhD in Data Science, Statistics, or related field
+- Strong programming skills in Python and R
+- Experience with machine learning libraries (scikit-learn, TensorFlow, etc.)
+- Proficiency in SQL and experience with big data technologies (Hadoop, Spark)
+- Excellent communication skills and ability to explain complex concepts to non-technical stakeholders
 
-**Benefits:**
+Join us in turning data into actionable insights!
+    `,
+    category: "Data Science",
+    experienceLevel: "Mid-Level",
+    skills: [
+      "Python",
+      "R",
+      "Machine Learning",
+      "SQL",
+      "Data Visualization",
+      "Statistical Analysis",
+    ],
+    subcategories: [
+      "Predictive Analytics",
+      "Big Data",
+      "Business Intelligence",
+    ],
+    salary: 135000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "Analytics Pro",
+    applicationEmail: "careers@analyticspro.com",
+    applicationUrl: "https://analyticspro.com/careers",
+    companyLogoUrl: "https://analyticspro.com/logo.png",
+    approved: true,
+    createdAt: new Date("2023-09-19T13:00:00Z"),
+    updatedAt: new Date("2023-09-19T13:00:00Z"),
+  },
+  {
+    id: 6,
+    slug: "frontend-developer-webcraft-solutions",
+    title: "Frontend Developer",
+    type: "Full-time",
+    locationType: "Remote",
+    timezonePreference: "UTC-8 to UTC+2",
+    location: null,
+    description: `
+# Frontend Developer
 
--   Flexible working hours to accommodate your schedule.
--   Competitive hourly rate.
--   Mentorship from experienced developers.
--   Opportunity to work on real-world projects in a leading e-commerce platform.
--   Potential for full-time employment and career growth within Shopify.
+We're seeking a creative and skilled Frontend Developer to join our remote team. You'll be responsible for bringing our web applications to life with beautiful, responsive, and user-friendly interfaces.
 
-Shopify is an equal opportunity employer committed to diversity and inclusion in the workplace.
+## Key Responsibilities:
+- Develop and maintain responsive web applications using modern frontend technologies
+- Collaborate with UX/UI designers to implement visually appealing and intuitive user interfaces
+- Optimize applications for maximum speed and scalability
+- Ensure cross-browser compatibility and implement responsive design principles
+- Write clean, maintainable, and efficient code
 
-This is a fantastic opportunity for those looking to kickstart their career in web development while working for one of the most innovative companies in e-commerce. Join us at Shopify and help redefine commerce around the world!
-`,
+## Requirements:
+- 3+ years of experience in frontend development
+- Strong proficiency in HTML, CSS, and JavaScript
+- Experience with modern frontend frameworks (React, Vue.js, or Angular)
+- Familiarity with state management solutions (Redux, Vuex, etc.)
+- Knowledge of responsive design principles and cross-browser compatibility
+- Eye for design and attention to detail
+
+Join us in creating exceptional web experiences!
+    `,
+    category: "Web Development",
+    experienceLevel: "Mid-Level",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Vue.js",
+      "Responsive Design",
+    ],
+    subcategories: ["Frontend Development", "UI Development"],
+    salary: 95000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "WebCraft Solutions",
+    applicationEmail: "jobs@webcraftsolutions.com",
+    applicationUrl: "https://webcraftsolutions.com/careers",
+    companyLogoUrl: "https://webcraftsolutions.com/logo.svg",
+    approved: true,
+    createdAt: new Date("2023-09-20T09:30:00Z"),
+    updatedAt: new Date("2023-09-20T09:30:00Z"),
+  },
+  {
+    id: 7,
+    slug: "cybersecurity-analyst-securetech",
+    title: "Cybersecurity Analyst",
+    type: "Full-time",
+    locationType: "On-site",
+    timezonePreference: "UTC to UTC+2",
+    location: "London, United Kingdom",
+    description: `
+# Cybersecurity Analyst
+
+Join our team of cybersecurity experts to protect our organization from evolving digital threats. We're looking for a skilled Cybersecurity Analyst to help maintain the integrity and security of our information systems.
+
+## Key Responsibilities:
+- Monitor network traffic for suspicious activities and investigate security breaches
+- Implement and maintain security tools and infrastructure
+- Conduct vulnerability assessments and penetration testing
+- Develop and update security policies and procedures
+- Provide security awareness training to employees
+- Stay up-to-date with the latest cybersecurity trends and threats
+
+## Requirements:
+- Bachelor's degree in Cybersecurity, Computer Science, or related field
+- 3+ years of experience in cybersecurity or information security
+- Relevant certifications (e.g., CompTIA Security+, CEH, CISSP)
+- Strong knowledge of network security, encryption, and security protocols
+- Experience with SIEM tools and intrusion detection/prevention systems
+- Excellent problem-solving and analytical skills
+
+Join us in defending against cyber threats and securing our digital assets!
+    `,
+    category: "Information Security",
+    experienceLevel: "Mid-Level",
+    skills: [
+      "Network Security",
+      "Penetration Testing",
+      "SIEM",
+      "Security Protocols",
+      "Vulnerability Assessment",
+    ],
+    subcategories: [
+      "Cybersecurity",
+      "Information Assurance",
+      "Risk Management",
+    ],
+    salary: 75000,
+    contractDuration: "Permanent",
+    currency: "GBP",
+    negotiable: false,
+    companyName: "SecureTech",
+    applicationEmail: "careers@securetech.co.uk",
+    applicationUrl: "https://securetech.co.uk/join-us",
+    companyLogoUrl: "https://securetech.co.uk/images/logo.png",
+    approved: true,
+    createdAt: new Date("2023-09-21T11:15:00Z"),
+    updatedAt: new Date("2023-09-21T11:15:00Z"),
+  },
+  {
+    id: 8,
+    slug: "product-manager-innovate-inc",
+    title: "Product Manager",
+    type: "Full-time",
+    locationType: "Hybrid",
+    timezonePreference: "UTC-7 to UTC-4",
+    location: "Seattle, WA, United States",
+    description: `
+# Product Manager
+
+We're looking for a visionary Product Manager to lead the development and launch of innovative products. Join our team and help shape the future of our product line.
+
+## Key Responsibilities:
+- Define product vision, strategy, and roadmap
+- Gather and prioritize product and customer requirements
+- Work closely with engineering, design, and marketing teams to deliver products
+- Analyze market trends and competition to inform product decisions
+- Define and track key performance metrics for products
+- Conduct user research and incorporate feedback into product plans
+
+## Requirements:
+- Bachelor's degree in Business, Computer Science, or related field
+- 5+ years of experience in product management, preferably in a tech company
+- Strong analytical and problem-solving skills
+- Excellent communication and leadership abilities
+- Experience with agile development methodologies
+- Ability to make data-driven decisions
+
+Join us in bringing innovative products to market!
+    `,
+    category: "Product Management",
+    experienceLevel: "Senior",
+    skills: [
+      "Product Strategy",
+      "Agile Methodologies",
+      "User Research",
+      "Data Analysis",
+      "Cross-functional Leadership",
+    ],
+    subcategories: [
+      "Product Development",
+      "Product Marketing",
+      "User Experience",
+    ],
+    salary: 140000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "Innovate Inc.",
+    applicationEmail: "careers@innovateinc.com",
+    applicationUrl: "https://innovateinc.com/careers",
+    companyLogoUrl: "https://innovateinc.com/logo.png",
+    approved: false,
+    createdAt: new Date("2023-09-22T10:45:00Z"),
+    updatedAt: new Date("2023-09-22T10:45:00Z"),
+  },
+  {
+    id: 9,
+    slug: "cloud-architect-skyward-tech",
+    title: "Cloud Architect",
+    type: "Full-time",
+    locationType: "Remote",
+    timezonePreference: "UTC-8 to UTC+1",
+    location: null,
+    description: `
+# Cloud Architect
+
+We're seeking an experienced Cloud Architect to design and implement robust, scalable, and secure cloud infrastructure. Join our team and help drive our cloud strategy and migration efforts.
+
+## Key Responsibilities:
+- Design and implement cloud-based architectures on major platforms (AWS, Azure, GCP)
+- Develop cloud migration strategies and lead migration projects
+- Optimize cloud infrastructure for performance, cost, and security
+- Implement cloud governance and best practices
+- Mentor team members on cloud technologies and practices
+- Stay up-to-date with the latest cloud technologies and trends
+
+## Requirements:
+- Bachelor's degree in Computer Science, Information Technology, or related field
+- 7+ years of experience in IT with at least 4 years focused on cloud architecture
+- Strong experience with major cloud platforms (AWS, Azure, or GCP)
+- Relevant certifications (e.g., AWS Solutions Architect, Azure Solutions Architect, GCP Professional Cloud Architect)
+- Experience with Infrastructure as Code (Terraform, CloudFormation)
+- Strong understanding of networking, security, and compliance in cloud environments
+
+Join us in architecting the future of cloud computing!
+    `,
+    category: "Cloud Computing",
+    experienceLevel: "Senior",
+    skills: [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Cloud Migration",
+      "Infrastructure as Code",
+      "Cloud Security",
+    ],
+    subcategories: ["Cloud Architecture", "DevOps", "Cloud Migration"],
+    salary: 160000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "Skyward Tech",
+    applicationEmail: "jobs@skywardtech.com",
+    applicationUrl: "https://skywardtech.com/careers",
+    companyLogoUrl: "https://skywardtech.com/logo.svg",
+    approved: true,
+    createdAt: new Date("2023-09-23T14:30:00Z"),
+    updatedAt: new Date("2023-09-23T14:30:00Z"),
+  },
+  {
+    id: 10,
+    slug: "mobile-app-developer-appcraft-mobile",
+    title: "Mobile App Developer",
+    type: "Full-time",
+    locationType: "Hybrid",
+    timezonePreference: "UTC+1 to UTC+3",
+    location: "Berlin, Germany",
+    description: `
+# Mobile App Developer
+
+Join our mobile development team to create cutting-edge apps for iOS and Android platforms. We're looking for a talented Mobile App Developer to help us deliver exceptional mobile experiences to our users.
+
+## Key Responsibilities:
+- Develop and maintain high-quality mobile applications for iOS and Android
+- Collaborate with cross-functional teams to define and implement new features
+- Ensure the performance, quality, and responsiveness of applications
+- Optimize applications for maximum speed and scalability
+- Stay up-to-date with the latest mobile development trends and best practices
+
+## Requirements:
+- Bachelor's degree in Computer Science or related field
+- 3+ years of experience in mobile app development
+- Proficiency in Swift and Kotlin
+- Experience with React Native or Flutter is a plus
+- Familiarity with RESTful APIs and third-party libraries
+- Strong problem-solving skills and attention to detail
+
+Join us in creating mobile apps that users love!
+    `,
+    category: "Mobile Development",
+    experienceLevel: "Mid-Level",
+    skills: [
+      "iOS",
+      "Android",
+      "Swift",
+      "Kotlin",
+      "React Native",
+      "RESTful APIs",
+    ],
+    subcategories: [
+      "App Development",
+      "Mobile UX",
+      "Cross-platform Development",
+    ],
+    salary: 70000,
+    contractDuration: "Permanent",
+    currency: "EUR",
+    negotiable: true,
+    companyName: "AppCraft Mobile",
+    applicationEmail: "careers@appcraftmobile.de",
+    applicationUrl: "https://appcraftmobile.de/careers",
+    companyLogoUrl: "https://appcraftmobile.de/logo.png",
+    approved: true,
+    createdAt: new Date("2023-09-24T09:00:00Z"),
+    updatedAt: new Date("2023-09-24T09:00:00Z"),
+  },
+  {
+    id: 11,
+    slug: "digital-marketing-manager-growth-gurus",
+    title: "Digital Marketing Manager",
+    type: "Full-time",
+    locationType: "Remote",
+    timezonePreference: "UTC-5 to UTC+1",
+    location: null,
+    description: `
+# Digital Marketing Manager
+
+We're looking for a results-driven Digital Marketing Manager to lead our online marketing efforts. Join our team to develop and implement strategies that drive brand awareness, customer engagement, and revenue growth.
+
+## Key Responsibilities:
+- Develop and execute comprehensive digital marketing strategies
+- Manage and optimize paid advertising campaigns across multiple platforms
+- Oversee SEO efforts to improve organic search rankings
+- Lead content marketing initiatives to drive traffic and engagement
+- Analyze campaign performance and provide actionable insights
+- Manage and mentor a team of digital marketing specialists
+
+## Requirements:
+- Bachelor's degree in Marketing, Business, or related field
+- 5+ years of experience in digital marketing
+- Strong knowledge of digital marketing channels (SEO, PPC, social media, email marketing)
+- Experience with marketing analytics tools (Google Analytics, SEMrush, etc.)
+- Excellent analytical and problem-solving skills
+- Strong leadership and communication abilities
+
+Join us in driving digital growth and innovation!
+    `,
+    category: "Marketing",
+    experienceLevel: "Senior",
+    skills: [
+      "Digital Marketing",
+      "SEO",
+      "PPC",
+      "Content Marketing",
+      "Social Media Marketing",
+      "Analytics",
+    ],
+    subcategories: [
+      "Online Advertising",
+      "Marketing Strategy",
+      "Growth Marketing",
+    ],
+    salary: 90000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "Growth Gurus",
+    applicationEmail: "careers@growthgurus.com",
+    applicationUrl: "https://growthgurus.com/join-us",
+    companyLogoUrl: "https://growthgurus.com/logo.png",
+    approved: true,
+    createdAt: new Date("2023-09-25T11:30:00Z"),
+    updatedAt: new Date("2023-09-25T11:30:00Z"),
   },
 ];
 

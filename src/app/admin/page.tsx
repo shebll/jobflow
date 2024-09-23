@@ -1,22 +1,24 @@
-import JobList from "./JobList";
-import Filter from "./filter/Filter";
-import { filterSchemaType } from "@/lib/vaildation";
+import AdminFeed from "@/components/admin/AdminFeed";
 import { Suspense } from "react";
 
-function Feed({ filterValues }: { filterValues: filterSchemaType }) {
+export default function page() {
   return (
-    <section className="flex w-full flex-col justify-center gap-4 lg:flex-row">
-      <Filter filterValues={filterValues} />
+    <main className="mx-auto flex max-w-5xl flex-1 flex-col items-center justify-start gap-10 p-4 py-20">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold">Admin Dashboard</h1>
+        <p className="text-sm text-gray-500">
+          Welcome to your admin dashboard. Here you can manage your posts and
+          users.
+        </p>
+      </div>
       <Suspense fallback={<LoadingFeedUi />}>
-        <JobList filterValues={filterValues} />
+        <AdminFeed />
       </Suspense>
-    </section>
+    </main>
   );
 }
 
-export default Feed;
-
-export const LoadingFeedUi = () => {
+const LoadingFeedUi = () => {
   const skeletons = [
     {
       titleWidth: "w-48",

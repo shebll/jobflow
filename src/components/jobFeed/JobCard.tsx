@@ -2,7 +2,7 @@ import { Job } from "@prisma/client";
 import Image from "next/image";
 import CompanyLogoPlaceHolder from "../../public/images/company-logo-placeholder.png";
 import Badge from "../shared/Badge";
-import { Banknote, DollarSign, House, LocateIcon, MapPin } from "lucide-react";
+import { Banknote, House, LocateIcon, MapPin } from "lucide-react";
 import { formatCurrency, timeAgo } from "@/lib/utils";
 
 function JobCard({ job }: { job: Job }) {
@@ -14,7 +14,7 @@ function JobCard({ job }: { job: Job }) {
           alt={`${job.companyName} Logo Image`}
           width={100}
           height={100}
-          className="rounded-md"
+          className="rounded-xl"
         />
       </div>
       <div className="flex flex-grow flex-col justify-between gap-10 md:flex-row">

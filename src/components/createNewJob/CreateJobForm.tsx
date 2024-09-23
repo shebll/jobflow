@@ -25,24 +25,54 @@ import { Input } from "../ui/input";
 import Select from "../ui/select";
 import { CategorySection } from "./CategorySection";
 import { ExperienceSection } from "./ExperienceSection";
+import { LoadingButton } from "../ui/loadingButton";
+import { PostAJob } from "./actions";
+import { useState } from "react";
+import { ErrorDialog, ZodErrorsArray } from "../ui/ErrorDialog";
 
 export function CreateJobForm() {
+  const [errorDialogOpen, setErrorDialogOpen] = useState(false);
+  const [zodErrors, setZodErrors] = useState<ZodErrorsArray>([]);
+
   const form = useForm<createJobSchemaType>({
     resolver: zodResolver(createJobSchema),
   });
   const {
-    setFocus,
     formState: { errors, isSubmitting },
     handleSubmit,
     control,
   } = form;
 
   const onSubmit = async (values: createJobSchemaType) => {
-    console.log(JSON.stringify(values, null, 2));
+    const formData = new FormData();
+
+    Object.entries(values).forEach(([key, value]) => {
+      if (value === null || value === undefined) {
+        return; // Skip null or undefined values
+      }
+
+      if (typeof value === "boolean") {
+        formData.append(key, value ? "true" : "false");
+      } else if (Array.isArray(value)) {
+        formData.append(key, value.join(","));
+      } else if (value instanceof File) {
+        formData.append(key, value);
+      } else if (value !== undefined && value !== null) {
+        formData.append(key, value.toString());
+      }
+    });
+
+    try {
+      await PostAJob(formData);
+    } catch (error) {
+      console.log(error);
+      if (error instanceof Error) {
+        const parsedErrors = error as any; // Assuming issues are passed as an array of error objects
+        setZodErrors(parsedErrors);
+        setErrorDialogOpen(true);
+      }
+    }
   };
-
-  console.log(errors);
-
   return (
     <div className="mx-auto w-full max-w-3xl space-y-6 rounded-lg border p-4">
       <div>
@@ -154,13 +184,23 @@ export function CreateJobForm() {
           {/* salary */}
           <SalaryInput control={control} />
           <div className="flex gap-2">
-            <Button className="w-full" type="submit">
+            <LoadingButton
+              pending={isSubmitting}
+              className="w-full"
+              type="submit"
+            >
               Post a Job
-            </Button>
+            </LoadingButton>
             <Button variant={"outline"} type="reset">
               Reset
             </Button>
           </div>
+          {/* Error Dialog */}
+          {/* <ErrorDialog
+            errors={zodErrors}
+            open={errorDialogOpen}
+            onClose={() => setErrorDialogOpen(false)}
+          /> */}
         </form>
       </Form>
     </div>

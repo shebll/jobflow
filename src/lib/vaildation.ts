@@ -12,7 +12,11 @@ const salarySchema = z.object({
     .regex(/^\d+$/, "Invalid salary format")
     .max(6, "Salary must be less than 6 digits")
     .min(4, "Salary must be greater than 4 digits"),
-  negotiable: z.boolean().optional().default(false),
+  negotiable: z
+    .boolean()
+    .optional()
+    .default(false)
+    .transform((check) => check === true),
 });
 
 // 3. company logo file schema
@@ -20,12 +24,12 @@ const companyLogoSchema = z
   .custom<File | undefined>()
   .refine(
     (fileValue) =>
-      !fileValue ||
+      fileValue == null ||
       (fileValue instanceof File && fileValue.type.startsWith("image/")),
     "Invalid file type",
   )
   .refine(
-    (fileValue) => !fileValue || fileValue.size <= 1024 * 1024 * 2,
+    (fileValue) => fileValue == null || fileValue.size <= 1024 * 1024 * 2,
     "Max file size is 2MB",
   )
   .transform((fileValue) => {
@@ -36,8 +40,8 @@ const companyLogoSchema = z
 const applicationSchema = z
   .object({
     application: z.string().optional(),
-    applicationEmail: z.string().max(100).email().optional().or(z.literal("")),
-    applicationUrl: z.string().max(100).url().optional().or(z.literal("")),
+    applicationEmail: z.string().max(100).email().or(z.literal("")).optional(),
+    applicationUrl: z.string().max(100).url().or(z.literal("")).optional(),
   })
   .refine((data) => data.applicationEmail || data.applicationUrl, {
     message: "At least one contact method is required",

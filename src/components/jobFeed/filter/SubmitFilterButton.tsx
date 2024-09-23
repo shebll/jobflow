@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { LoadingButton } from "@/components/ui/loadingButton";
 import { cn } from "@/lib/utils";
 import { LoaderIcon } from "lucide-react";
 import { useFormStatus } from "react-dom";
@@ -10,17 +11,9 @@ function SubmitFilterButton(
 ) {
   const { pending } = useFormStatus();
   return (
-    <Button
-      {...props}
-      type={props.type}
-      className={cn(props.className, "")}
-      disabled={props.disabled || pending}
-    >
-      <span className="flex items-center justify-center gap-1">
-        {pending && <LoaderIcon size={16} className="animate-spin" />}
-        {props.children}
-      </span>
-    </Button>
+    <LoadingButton type="submit" pending={pending} {...props}>
+      {props.children}
+    </LoadingButton>
   );
 }
 

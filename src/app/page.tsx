@@ -32,7 +32,7 @@ export default function Home({ searchParams }: props) {
     remote: searchParams.remote === "true",
   };
   return (
-    <main className="mx-auto flex max-w-5xl flex-1 flex-col items-center justify-center gap-10 p-4 py-20">
+    <main className="mx-auto flex max-w-5xl flex-1 flex-col items-center justify-start gap-10 p-4 py-20">
       <div className="text-center">
         <h1 className="text-4xl font-bold">
           Discover {generateTitle(filterValues)}

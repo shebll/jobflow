@@ -2,6 +2,7 @@ import { filterSchemaType } from "@/lib/vaildation";
 import prisma from "../../lib/prisma";
 import JobCard from "./JobCard";
 import { Prisma } from "@prisma/client";
+import Link from "next/link";
 async function JobList({
   filterValues: { q, location, remote, jobType },
 }: {
@@ -48,7 +49,11 @@ async function JobList({
     <section className="shrink-0">
       <div className="flex w-full flex-col gap-2">
         {jobs.length > 0 ? (
-          jobs.map((job) => <JobCard key={job.id} job={job} />)
+          jobs.map((job) => (
+            <Link key={job.id} href={`/jobs/${job.slug}`}>
+              <JobCard job={job} />
+            </Link>
+          ))
         ) : (
           <NoJobsFoundCard />
         )}
