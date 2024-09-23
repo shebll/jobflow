@@ -19,6 +19,7 @@ export async function generateStaticParams() {
 
   return jobs.map((job) => job.slug);
 }
+export const dynamic = "force-static";
 export default async function JobPage({ params: { slug } }: PageProps) {
   return (
     <div className="container mx-auto flex-1 px-2 py-8">

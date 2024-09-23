@@ -18,12 +18,9 @@ import { getJob } from "@/lib/getJob";
 import Link from "next/link";
 import { formatCurrency } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { LoadingButton } from "@/components/ui/loadingButton";
-import { useFormState } from "react-dom";
-import { approveSubmission } from "../../actions";
-import SubmitFilterButton from "@/components/jobFeed/filter/SubmitFilterButton";
 import { ApproveButton } from "./ApproveButton";
 import { DeleteJobButton } from "./DeleteJobButton";
+import prisma from "@/lib/prisma";
 
 export const JobAdminDetail = async ({ slug }: { slug: string }) => {
   const job = await getJob(slug);
