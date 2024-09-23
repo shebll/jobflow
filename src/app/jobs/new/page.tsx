@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 function page() {
   return (
-    <main className="flex flex-col gap-10 py-20">
+    <main className="flex flex-col gap-10 px-2 py-20 ">
       <section className="text-center">
         <h1 className="text-4xl font-bold">
           Find Your Best Developers - (Create a New Job)
