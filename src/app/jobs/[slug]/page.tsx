@@ -46,7 +46,15 @@ export async function generateStaticParams() {
 export default async function JobPage({ params: { slug } }: PageProps) {
   return (
     <div className="container mx-auto flex-1 px-2 py-8">
-      <Suspense fallback={<Loading />}>
+      <Suspense
+        fallback={
+          <>
+            <Loading />
+            <Loading />
+            <Loading />
+          </>
+        }
+      >
         <JobDetail slug={slug} />
       </Suspense>
     </div>

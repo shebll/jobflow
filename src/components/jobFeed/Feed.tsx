@@ -73,7 +73,7 @@ export const LoadingFeedUi = () => {
       {skeletons.map((skeleton, index) => (
         <article
           key={index}
-          className="flex w-[680px] animate-pulse flex-col gap-3 rounded-lg border p-6 shadow-sm md:flex-row"
+          className="flex w-fit animate-pulse flex-col gap-3 rounded-lg border p-6 shadow-sm md:w-[680px] md:flex-row"
         >
           {/* Company Logo Skeleton */}
           <div className="h-[100px] w-[100px] rounded-md bg-muted"></div>

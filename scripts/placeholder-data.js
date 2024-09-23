@@ -1,91 +1,80 @@
 const placeholderJobs = [
   {
     id: 1,
-    slug: "senior-full-stack-developer-techinnovate",
-    title: "Senior Full-Stack Developer",
+    slug: "senior-software-engineer-google",
+    title: "Senior Software Engineer",
     type: "Full-time",
-    locationType: "Remote",
-    timezonePreference: "UTC-5 to UTC-8",
-    location: "United States",
+    locationType: "Hybrid",
+    timezonePreference: "UTC-8 to UTC-5",
+    location: "Mountain View, CA, United States",
     description: `
-# Senior Full-Stack Developer
-
-We're looking for a seasoned Full-Stack Developer to join our innovative team. In this role, you'll be responsible for developing and maintaining complex web applications, from the database to the user interface.
-
-## Key Responsibilities:
-- Design and implement scalable backend services using Node.js and Express
-- Develop responsive and interactive front-end interfaces using React and Redux
-- Optimize application performance and implement security best practices
-- Collaborate with cross-functional teams to define and implement new features
-- Mentor junior developers and contribute to code reviews
-
-## Requirements:
-- 5+ years of experience in full-stack development
-- Strong proficiency in JavaScript, including ES6+ features
-- Experience with React, Redux, Node.js, and Express
-- Familiarity with SQL and NoSQL databases
-- Knowledge of AWS or other cloud platforms
-- Excellent problem-solving and communication skills
-
-Join us in creating cutting-edge web applications that make a difference!
-    `,
-    category: "Software Development",
+  # Senior Software Engineer
+  
+  Google is looking for a Senior Software Engineer to join our team and help build the next generation of innovative products that will shape the future of technology.
+  
+  ## Key Responsibilities:
+  - Design, develop, and maintain large-scale distributed systems
+  - Collaborate with cross-functional teams to define and implement new features
+  - Optimize code for maximum performance and scalability
+  - Mentor junior engineers and contribute to the overall growth of the team
+  - Participate in code reviews and contribute to best practices
+  
+  ## Requirements:
+  - Bachelor's or Master's degree in Computer Science or related field
+  - 5+ years of experience in software development
+  - Strong proficiency in one or more programming languages (e.g., Java, C++, Python)
+  - Experience with distributed systems and cloud technologies
+  - Excellent problem-solving and communication skills
+  
+  Join us in creating technology that makes a difference in billions of lives!
+      `,
+    category: "Software Engineering",
     experienceLevel: "Senior",
-    skills: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Express",
-      "AWS",
-      "SQL",
-      "NoSQL",
-    ],
-    subcategories: [
-      "Web Development",
-      "Backend Development",
-      "Frontend Development",
-    ],
-    salary: 130000,
+    skills: ["Java", "C++", "Python", "Distributed Systems", "Cloud Computing"],
+    subcategories: ["Backend Development", "Systems Engineering"],
+    salary: 180000,
     contractDuration: "Permanent",
     currency: "USD",
     negotiable: true,
-    companyName: "TechInnovate Solutions",
-    applicationEmail: "careers@techinnovate.com",
-    applicationUrl: "https://techinnovate.com/careers",
-    companyLogoUrl: "https://techinnovate.com/logo.png",
+    companyName: "Google",
+    applicationEmail: "careers@google.com",
+    applicationUrl: "https://careers.google.com/jobs/results/",
+    companyLogoUrl:
+      "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
     approved: true,
-    createdAt: new Date("2023-09-15T10:00:00Z"),
-    updatedAt: new Date("2023-09-15T10:00:00Z"),
+    createdAt: new Date("2023-09-26T09:00:00Z"),
+    updatedAt: new Date("2023-09-26T09:00:00Z"),
   },
   {
     id: 2,
-    slug: "ux-ui-designer-designcraft",
-    title: "UX/UI Designer",
-    type: "Contract",
-    locationType: "Hybrid",
-    timezonePreference: "UTC to UTC+3",
-    location: "London, United Kingdom",
+    slug: "product-designer-airbnb",
+    title: "Product Designer",
+    type: "Full-time",
+    locationType: "Remote",
+    timezonePreference: "UTC-8 to UTC+1",
+    location: null,
     description: `
-# UX/UI Designer
-
-We're seeking a talented UX/UI Designer to help create intuitive and visually appealing interfaces for our digital products. This is a 6-month contract position with the possibility of extension.
-
-## Key Responsibilities:
-- Create user-centered designs by understanding business requirements and user feedback
-- Develop wireframes, prototypes, and high-fidelity mockups
-- Conduct user research and usability testing to inform design decisions
-- Collaborate with product managers and developers to implement designs
-- Ensure consistency in design language across all our products
-
-## Requirements:
-- 3+ years of experience in UX/UI design for digital products
-- Proficiency in design tools such as Figma, Sketch, or Adobe XD
-- Strong portfolio demonstrating your design process and problem-solving skills
-- Experience with design systems and component libraries
-- Knowledge of accessibility standards and responsive design principles
-
-Join our team and help shape the future of our digital experiences!
-    `,
+  # Product Designer
+  
+  Airbnb is seeking a talented Product Designer to join our team and help create beautiful, intuitive experiences for our global community of hosts and guests.
+  
+  ## Key Responsibilities:
+  - Create user-centered designs by understanding business requirements and user feedback
+  - Design user flows, wireframes, and visual designs for our products
+  - Collaborate with product managers, engineers, and other designers
+  - Conduct user research and usability testing
+  - Contribute to our design system and help maintain design consistency
+  
+  ## Requirements:
+  - Bachelor's degree in Design, HCI, or related field
+  - 3+ years of experience in product design
+  - Strong portfolio showcasing your design process and problem-solving skills
+  - Proficiency in design tools such as Figma or Sketch
+  - Experience with responsive and mobile design
+  - Excellent communication and collaboration skills
+  
+  Join us in designing the future of travel and hospitality!
+      `,
     category: "Design",
     experienceLevel: "Mid-Level",
     skills: [
@@ -97,350 +86,287 @@ Join our team and help shape the future of our digital experiences!
       "Prototyping",
     ],
     subcategories: ["Product Design", "Interaction Design", "Visual Design"],
-    salary: 65000,
-    contractDuration: "6 months",
-    currency: "GBP",
-    negotiable: true,
-    companyName: "DesignCraft Digital",
-    applicationEmail: "hello@designcraft.co.uk",
-    applicationUrl: "https://designcraft.co.uk/jobs",
-    companyLogoUrl: "https://designcraft.co.uk/brand/logo.svg",
-    approved: true,
-    createdAt: new Date("2023-09-16T14:30:00Z"),
-    updatedAt: new Date("2023-09-16T14:30:00Z"),
-  },
-  {
-    id: 3,
-    slug: "machine-learning-engineer-ai-frontiers",
-    title: "Machine Learning Engineer",
-    type: "Full-time",
-    locationType: "Hybrid",
-    timezonePreference: "UTC-8 to UTC-5",
-    location: "San Francisco, CA, United States",
-    description: `
-# Machine Learning Engineer
-
-Join our AI team to develop cutting-edge machine learning solutions that solve real-world problems. We're looking for a talented ML Engineer to help us push the boundaries of what's possible with AI.
-
-## Key Responsibilities:
-- Design, develop, and deploy machine learning models
-- Collaborate with data scientists and software engineers to integrate ML models into production systems
-- Optimize ML algorithms for performance and scalability
-- Stay up-to-date with the latest advancements in machine learning and AI
-- Contribute to research papers and open-source projects
-
-## Requirements:
-- Masters or PhD in Computer Science, Machine Learning, or related field
-- Strong programming skills in Python and experience with ML frameworks (TensorFlow, PyTorch)
-- Experience with deep learning, natural language processing, or computer vision
-- Familiarity with cloud platforms (preferably GCP or AWS) for ML deployment
-- Strong mathematical background in linear algebra, calculus, and statistics
-- Excellent problem-solving skills and ability to work in a fast-paced environment
-
-Join us in shaping the future of AI technology!
-    `,
-    category: "Artificial Intelligence",
-    experienceLevel: "Senior",
-    skills: [
-      "Python",
-      "TensorFlow",
-      "PyTorch",
-      "Deep Learning",
-      "NLP",
-      "Computer Vision",
-      "GCP",
-      "AWS",
-    ],
-    subcategories: ["Machine Learning", "Deep Learning", "AI Research"],
-    salary: 180000,
+    salary: 130000,
     contractDuration: "Permanent",
     currency: "USD",
     negotiable: true,
-    companyName: "AI Frontiers",
-    applicationEmail: "careers@aifrontiers.com",
-    applicationUrl: "https://aifrontiers.com/careers",
-    companyLogoUrl: "https://aifrontiers.com/logo.png",
-    approved: false,
-    createdAt: new Date("2023-09-17T09:15:00Z"),
-    updatedAt: new Date("2023-09-17T09:15:00Z"),
-  },
-  {
-    id: 4,
-    slug: "blockchain-developer-blockchain-innovations",
-    title: "Blockchain Developer",
-    type: "Contract",
-    locationType: "Remote",
-    timezonePreference: null,
-    location: "Worldwide",
-    description: `
-# Blockchain Developer
-
-We are looking for an experienced Blockchain Developer to join our team on a 12-month contract. You'll be working on cutting-edge blockchain projects, developing smart contracts, and contributing to the decentralized future of finance.
-
-## Key Responsibilities:
-- Design and implement smart contracts for various blockchain platforms (Ethereum, Binance Smart Chain, etc.)
-- Develop and maintain decentralized applications (DApps)
-- Integrate blockchain solutions with existing systems and APIs
-- Ensure the security and efficiency of blockchain implementations
-- Collaborate with the team to troubleshoot and resolve technical issues
-- Stay informed about the latest developments in blockchain technology
-
-## Requirements:
-- Strong experience in blockchain development, particularly with Ethereum
-- Proficiency in Solidity and web3.js
-- Familiarity with other blockchain platforms (e.g., Binance Smart Chain, Polkadot)
-- Strong understanding of cryptography and blockchain consensus mechanisms
-- Experience with full-stack development (Node.js, React)
-- Knowledge of best practices in smart contract security
-- Ability to work independently and manage time effectively in a remote setting
-
-Join us in building the future of decentralized technology!
-    `,
-    category: "Blockchain",
-    experienceLevel: "Senior",
-    skills: [
-      "Solidity",
-      "Ethereum",
-      "Smart Contracts",
-      "web3.js",
-      "Node.js",
-      "React",
-    ],
-    subcategories: ["DeFi", "Smart Contracts", "Cryptocurrency"],
-    salary: 120000,
-    contractDuration: "12 months",
-    currency: "USD",
-    negotiable: true,
-    companyName: "BlockChain Innovations",
-    applicationEmail: "talent@bcinnovations.io",
-    applicationUrl: "https://bcinnovations.io/careers",
-    companyLogoUrl: "https://bcinnovations.io/images/logo.png",
+    companyName: "Airbnb",
+    applicationEmail: "design-jobs@airbnb.com",
+    applicationUrl: "https://careers.airbnb.com/positions/",
+    companyLogoUrl:
+      "https://a0.muscache.com/airbnb/static/logos/belo-200x200-4d851c5b28f61931bf1df28dd15e60ef.png",
     approved: true,
-    createdAt: new Date("2023-09-18T11:45:00Z"),
-    updatedAt: new Date("2023-09-18T11:45:00Z"),
+    createdAt: new Date("2023-09-27T10:30:00Z"),
+    updatedAt: new Date("2023-09-27T10:30:00Z"),
   },
   {
-    id: 5,
-    slug: "data-scientist-analytics-pro",
+    id: 3,
+    slug: "data-scientist-spotify",
     title: "Data Scientist",
     type: "Full-time",
     locationType: "Hybrid",
-    timezonePreference: "UTC-5 to UTC-8",
-    location: "New York, NY, United States",
+    timezonePreference: "UTC to UTC+2",
+    location: "Stockholm, Sweden",
     description: `
-# Data Scientist
-
-Join our data science team to uncover insights that drive business decisions. We're looking for a talented Data Scientist to help us leverage our data assets and create value through advanced analytics.
-
-## Key Responsibilities:
-- Develop and implement complex machine learning models
-- Conduct statistical analysis and hypothesis testing
-- Create data visualizations to communicate findings effectively
-- Collaborate with cross-functional teams to identify and solve business problems
-- Stay current with the latest advancements in data science and machine learning
-
-## Requirements:
-- Masters or PhD in Data Science, Statistics, or related field
-- Strong programming skills in Python and R
-- Experience with machine learning libraries (scikit-learn, TensorFlow, etc.)
-- Proficiency in SQL and experience with big data technologies (Hadoop, Spark)
-- Excellent communication skills and ability to explain complex concepts to non-technical stakeholders
-
-Join us in turning data into actionable insights!
-    `,
+  # Data Scientist
+  
+  Spotify is looking for a passionate Data Scientist to join our team and help us make data-driven decisions that shape the future of music streaming.
+  
+  ## Key Responsibilities:
+  - Develop and implement complex machine learning models
+  - Analyze large datasets to extract insights and drive product decisions
+  - Collaborate with cross-functional teams to identify and solve business problems
+  - Design and conduct A/B tests to measure the impact of product changes
+  - Communicate findings and recommendations to both technical and non-technical stakeholders
+  
+  ## Requirements:
+  - Master's or PhD in Computer Science, Statistics, or related field
+  - 3+ years of experience in data science or related field
+  - Strong programming skills in Python and SQL
+  - Experience with machine learning libraries (e.g., scikit-learn, TensorFlow)
+  - Familiarity with big data technologies (e.g., Spark, Hadoop)
+  - Excellent communication and presentation skills
+  
+  Join us in using data to create the best possible experience for music lovers worldwide!
+      `,
     category: "Data Science",
     experienceLevel: "Mid-Level",
     skills: [
       "Python",
-      "R",
-      "Machine Learning",
       "SQL",
-      "Data Visualization",
-      "Statistical Analysis",
-    ],
-    subcategories: [
-      "Predictive Analytics",
+      "Machine Learning",
+      "A/B Testing",
+      "Data Analysis",
       "Big Data",
-      "Business Intelligence",
     ],
-    salary: 135000,
+    subcategories: ["Machine Learning", "Analytics", "Big Data"],
+    salary: 100000,
     contractDuration: "Permanent",
-    currency: "USD",
+    currency: "EUR",
     negotiable: true,
-    companyName: "Analytics Pro",
-    applicationEmail: "careers@analyticspro.com",
-    applicationUrl: "https://analyticspro.com/careers",
-    companyLogoUrl: "https://analyticspro.com/logo.png",
+    companyName: "Spotify",
+    applicationEmail: "data-jobs@spotify.com",
+    applicationUrl: "https://www.spotifyjobs.com/search-jobs/",
+    companyLogoUrl:
+      "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png",
     approved: true,
-    createdAt: new Date("2023-09-19T13:00:00Z"),
-    updatedAt: new Date("2023-09-19T13:00:00Z"),
+    createdAt: new Date("2023-09-28T11:45:00Z"),
+    updatedAt: new Date("2023-09-28T11:45:00Z"),
   },
   {
-    id: 6,
-    slug: "frontend-developer-webcraft-solutions",
-    title: "Frontend Developer",
+    id: 4,
+    slug: "frontend-engineer-slack",
+    title: "Frontend Engineer",
     type: "Full-time",
     locationType: "Remote",
-    timezonePreference: "UTC-8 to UTC+2",
+    timezonePreference: "UTC-8 to UTC-5",
     location: null,
     description: `
-# Frontend Developer
-
-We're seeking a creative and skilled Frontend Developer to join our remote team. You'll be responsible for bringing our web applications to life with beautiful, responsive, and user-friendly interfaces.
-
-## Key Responsibilities:
-- Develop and maintain responsive web applications using modern frontend technologies
-- Collaborate with UX/UI designers to implement visually appealing and intuitive user interfaces
-- Optimize applications for maximum speed and scalability
-- Ensure cross-browser compatibility and implement responsive design principles
-- Write clean, maintainable, and efficient code
-
-## Requirements:
-- 3+ years of experience in frontend development
-- Strong proficiency in HTML, CSS, and JavaScript
-- Experience with modern frontend frameworks (React, Vue.js, or Angular)
-- Familiarity with state management solutions (Redux, Vuex, etc.)
-- Knowledge of responsive design principles and cross-browser compatibility
-- Eye for design and attention to detail
-
-Join us in creating exceptional web experiences!
-    `,
-    category: "Web Development",
+  # Frontend Engineer
+  
+  Slack is seeking a talented Frontend Engineer to join our team and help build the future of workplace communication.
+  
+  ## Key Responsibilities:
+  - Develop and maintain high-quality, responsive web applications
+  - Collaborate with designers to implement intuitive user interfaces
+  - Write clean, efficient, and reusable code
+  - Optimize applications for maximum speed and scalability
+  - Participate in code reviews and contribute to our frontend architecture
+  
+  ## Requirements:
+  - Bachelor's degree in Computer Science or related field
+  - 3+ years of experience in frontend development
+  - Strong proficiency in JavaScript, HTML, and CSS
+  - Experience with modern frontend frameworks (e.g., React, Vue.js)
+  - Familiarity with RESTful APIs and frontend build tools
+  - Strong problem-solving skills and attention to detail
+  
+  Join us in creating tools that make work life simpler, more pleasant, and more productive!
+      `,
+    category: "Software Engineering",
     experienceLevel: "Mid-Level",
     skills: [
-      "HTML",
-      "CSS",
       "JavaScript",
       "React",
-      "Vue.js",
-      "Responsive Design",
+      "HTML",
+      "CSS",
+      "RESTful APIs",
+      "Frontend Architecture",
     ],
-    subcategories: ["Frontend Development", "UI Development"],
-    salary: 95000,
-    contractDuration: "Permanent",
-    currency: "USD",
-    negotiable: true,
-    companyName: "WebCraft Solutions",
-    applicationEmail: "jobs@webcraftsolutions.com",
-    applicationUrl: "https://webcraftsolutions.com/careers",
-    companyLogoUrl: "https://webcraftsolutions.com/logo.svg",
-    approved: true,
-    createdAt: new Date("2023-09-20T09:30:00Z"),
-    updatedAt: new Date("2023-09-20T09:30:00Z"),
-  },
-  {
-    id: 7,
-    slug: "cybersecurity-analyst-securetech",
-    title: "Cybersecurity Analyst",
-    type: "Full-time",
-    locationType: "On-site",
-    timezonePreference: "UTC to UTC+2",
-    location: "London, United Kingdom",
-    description: `
-# Cybersecurity Analyst
-
-Join our team of cybersecurity experts to protect our organization from evolving digital threats. We're looking for a skilled Cybersecurity Analyst to help maintain the integrity and security of our information systems.
-
-## Key Responsibilities:
-- Monitor network traffic for suspicious activities and investigate security breaches
-- Implement and maintain security tools and infrastructure
-- Conduct vulnerability assessments and penetration testing
-- Develop and update security policies and procedures
-- Provide security awareness training to employees
-- Stay up-to-date with the latest cybersecurity trends and threats
-
-## Requirements:
-- Bachelor's degree in Cybersecurity, Computer Science, or related field
-- 3+ years of experience in cybersecurity or information security
-- Relevant certifications (e.g., CompTIA Security+, CEH, CISSP)
-- Strong knowledge of network security, encryption, and security protocols
-- Experience with SIEM tools and intrusion detection/prevention systems
-- Excellent problem-solving and analytical skills
-
-Join us in defending against cyber threats and securing our digital assets!
-    `,
-    category: "Information Security",
-    experienceLevel: "Mid-Level",
-    skills: [
-      "Network Security",
-      "Penetration Testing",
-      "SIEM",
-      "Security Protocols",
-      "Vulnerability Assessment",
-    ],
-    subcategories: [
-      "Cybersecurity",
-      "Information Assurance",
-      "Risk Management",
-    ],
-    salary: 75000,
-    contractDuration: "Permanent",
-    currency: "GBP",
-    negotiable: false,
-    companyName: "SecureTech",
-    applicationEmail: "careers@securetech.co.uk",
-    applicationUrl: "https://securetech.co.uk/join-us",
-    companyLogoUrl: "https://securetech.co.uk/images/logo.png",
-    approved: true,
-    createdAt: new Date("2023-09-21T11:15:00Z"),
-    updatedAt: new Date("2023-09-21T11:15:00Z"),
-  },
-  {
-    id: 8,
-    slug: "product-manager-innovate-inc",
-    title: "Product Manager",
-    type: "Full-time",
-    locationType: "Hybrid",
-    timezonePreference: "UTC-7 to UTC-4",
-    location: "Seattle, WA, United States",
-    description: `
-# Product Manager
-
-We're looking for a visionary Product Manager to lead the development and launch of innovative products. Join our team and help shape the future of our product line.
-
-## Key Responsibilities:
-- Define product vision, strategy, and roadmap
-- Gather and prioritize product and customer requirements
-- Work closely with engineering, design, and marketing teams to deliver products
-- Analyze market trends and competition to inform product decisions
-- Define and track key performance metrics for products
-- Conduct user research and incorporate feedback into product plans
-
-## Requirements:
-- Bachelor's degree in Business, Computer Science, or related field
-- 5+ years of experience in product management, preferably in a tech company
-- Strong analytical and problem-solving skills
-- Excellent communication and leadership abilities
-- Experience with agile development methodologies
-- Ability to make data-driven decisions
-
-Join us in bringing innovative products to market!
-    `,
-    category: "Product Management",
-    experienceLevel: "Senior",
-    skills: [
-      "Product Strategy",
-      "Agile Methodologies",
-      "User Research",
-      "Data Analysis",
-      "Cross-functional Leadership",
-    ],
-    subcategories: [
-      "Product Development",
-      "Product Marketing",
-      "User Experience",
-    ],
+    subcategories: ["Frontend Development", "Web Development"],
     salary: 140000,
     contractDuration: "Permanent",
     currency: "USD",
     negotiable: true,
-    companyName: "Innovate Inc.",
-    applicationEmail: "careers@innovateinc.com",
-    applicationUrl: "https://innovateinc.com/careers",
-    companyLogoUrl: "https://innovateinc.com/logo.png",
-    approved: false,
-    createdAt: new Date("2023-09-22T10:45:00Z"),
-    updatedAt: new Date("2023-09-22T10:45:00Z"),
+    companyName: "Slack",
+    applicationEmail: "careers@slack.com",
+    applicationUrl: "https://slack.com/careers",
+    companyLogoUrl:
+      "https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png",
+    approved: true,
+    createdAt: new Date("2023-09-29T13:15:00Z"),
+    updatedAt: new Date("2023-09-29T13:15:00Z"),
+  },
+  {
+    id: 5,
+    slug: "product-manager-netflix",
+    title: "Product Manager",
+    type: "Full-time",
+    locationType: "Hybrid",
+    timezonePreference: "UTC-8 to UTC-5",
+    location: "Los Gatos, CA, United States",
+    description: `
+  # Product Manager
+  
+  Netflix is looking for a creative and data-driven Product Manager to join our team and help shape the future of entertainment.
+  
+  ## Key Responsibilities:
+  - Define product vision, strategy, and roadmap
+  - Work closely with engineering, design, and content teams to deliver innovative features
+  - Analyze user behavior and market trends to inform product decisions
+  - Conduct user research and incorporate feedback into product plans
+  - Define and track key performance metrics for your product area
+  
+  ## Requirements:
+  - Bachelor's degree in Computer Science, Business, or related field
+  - 5+ years of experience in product management, preferably in a tech or media company
+  - Strong analytical and problem-solving skills
+  - Excellent communication and leadership abilities
+  - Experience with agile development methodologies
+  - Passion for entertainment and technology
+  
+  Join us in revolutionizing the way the world enjoys entertainment!
+      `,
+    category: "Product Management",
+    experienceLevel: "Senior",
+    skills: [
+      "Product Strategy",
+      "Data Analysis",
+      "User Research",
+      "Agile Methodologies",
+      "Product Roadmapping",
+    ],
+    subcategories: ["Product Development", "User Experience", "Strategy"],
+    salary: 170000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "Netflix",
+    applicationEmail: "productjobs@netflix.com",
+    applicationUrl: "https://jobs.netflix.com/",
+    companyLogoUrl:
+      "https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png",
+    approved: true,
+    createdAt: new Date("2023-09-30T14:45:00Z"),
+    updatedAt: new Date("2023-09-30T14:45:00Z"),
+  },
+  {
+    id: 6,
+    slug: "machine-learning-engineer-tesla",
+    title: "Machine Learning Engineer",
+    type: "Full-time",
+    locationType: "On-site",
+    timezonePreference: "UTC-8 to UTC-5",
+    location: "Palo Alto, CA, United States",
+    description: `
+  # Machine Learning Engineer
+  
+  Tesla is seeking a talented Machine Learning Engineer to join our Autopilot team and help revolutionize the future of autonomous driving.
+  
+  ## Key Responsibilities:
+  - Develop and implement state-of-the-art machine learning models for autonomous driving
+  - Collaborate with cross-functional teams to integrate ML models into Tesla's Autopilot system
+  - Optimize ML algorithms for performance and efficiency
+  - Conduct research to stay at the forefront of ML and computer vision advancements
+  - Contribute to the development of Tesla's ML infrastructure and tools
+  
+  ## Requirements:
+  - Master's or PhD in Computer Science, Machine Learning, or related field
+  - 3+ years of experience in machine learning or deep learning
+  - Strong programming skills in Python and C++
+  - Experience with deep learning frameworks (e.g., TensorFlow, PyTorch)
+  - Knowledge of computer vision and image processing techniques
+  - Passion for autonomous driving and electric vehicles
+  
+  Join us in accelerating the world's transition to sustainable energy!
+      `,
+    category: "Artificial Intelligence",
+    experienceLevel: "Senior",
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "Python",
+      "C++",
+      "TensorFlow",
+    ],
+    subcategories: ["Autonomous Driving", "Computer Vision", "Deep Learning"],
+    salary: 200000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "Tesla",
+    applicationEmail: "ml-jobs@tesla.com",
+    applicationUrl: "https://www.tesla.com/careers/",
+    companyLogoUrl:
+      "https://www.tesla.com/themes/custom/tesla_frontend/assets/favicons/favicon.ico",
+    approved: true,
+    createdAt: new Date("2023-10-01T09:30:00Z"),
+    updatedAt: new Date("2023-10-01T09:30:00Z"),
+  },
+  {
+    id: 7,
+    slug: "security-engineer-microsoft",
+    title: "Security Engineer",
+    type: "Full-time",
+    locationType: "Hybrid",
+    timezonePreference: "UTC-8 to UTC-5",
+    location: "Redmond, WA, United States",
+    description: `
+  # Security Engineer
+  
+  Microsoft is looking for a skilled Security Engineer to join our team and help protect our customers and products from evolving cyber threats.
+  
+  ## Key Responsibilities:
+  - Design and implement security solutions for Microsoft products and services
+  - Conduct security assessments and penetration testing
+  - Develop and maintain security policies and procedures
+  - Investigate and respond to security incidents
+  - Collaborate with cross-functional teams to ensure security best practices
+  - Stay up-to-date with the latest security threats and mitigation techniques
+  
+  ## Requirements:
+  - Bachelor's degree in Computer Science, Cybersecurity, or related field
+  - 5+ years of experience in information security
+  - Strong knowledge of network security, cryptography, and security protocols
+  - Experience with cloud security (Azure, AWS, or GCP)
+  - Relevant certifications (e.g., CISSP, CEH, OSCP)
+  - Excellent problem-solving and communication skills
+  
+  Join us in empowering every person and every organization on the planet to achieve more, securely!
+      `,
+    category: "Information Security",
+    experienceLevel: "Senior",
+    skills: [
+      "Network Security",
+      "Cryptography",
+      "Cloud Security",
+      "Penetration Testing",
+      "Incident Response",
+    ],
+    subcategories: ["Cybersecurity", "Cloud Security", "Risk Management"],
+    salary: 160000,
+    contractDuration: "Permanent",
+    currency: "USD",
+    negotiable: true,
+    companyName: "Microsoft",
+    applicationEmail: "security-jobs@microsoft.com",
+    applicationUrl: "https://careers.microsoft.com/",
+    companyLogoUrl:
+      "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
+    approved: true,
+    createdAt: new Date("2023-10-02T11:00:00Z"),
+    updatedAt: new Date("2023-10-02T11:00:00Z"),
   },
   {
     id: 9,

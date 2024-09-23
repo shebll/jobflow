@@ -27,8 +27,8 @@ export const JobDetail = async ({ slug }: { slug: string }) => {
   }
   return (
     <Card className="mx-auto w-full max-w-3xl space-y-4">
-      <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-2">
-        <div className="flex items-start space-x-4">
+      <CardHeader className="flex flex-col items-start justify-between gap-2 space-y-0 pb-2 md:flex-row">
+        <div className="flex flex-col items-start gap-4 md:flex-row">
           {job.companyLogoUrl && (
             <Image
               width={200}
