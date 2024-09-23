@@ -10,7 +10,7 @@ interface PageProps {
 export async function generateStaticParams() {
   const jobs = await prisma.job.findMany({
     where: {
-      approved: true,
+      approved: false,
     },
     select: {
       slug: true,
