@@ -118,7 +118,7 @@ function Pagination({
       ...(jobType && { jobType }),
       ...(location && { location }),
       ...(remote && { remote: "true" }),
-      ...(page !== 1 && { page: page.toString() }),
+      ...(page !== 1 && !(page > totalPages) && { page: page.toString() }),
     });
 
     return `/?${url.toString()}`;
