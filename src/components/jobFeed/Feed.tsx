@@ -3,12 +3,21 @@ import Filter from "./filter/Filter";
 import { filterSchemaType } from "@/lib/vaildation";
 import { Suspense } from "react";
 
-function Feed({ filterValues }: { filterValues: filterSchemaType }) {
+function Feed({
+  filterValues,
+  page,
+}: {
+  filterValues: filterSchemaType;
+  page?: string;
+}) {
   return (
     <section className="flex w-full flex-col justify-center gap-4 lg:flex-row">
       <Filter filterValues={filterValues} />
       <Suspense fallback={<LoadingFeedUi />}>
-        <JobList filterValues={filterValues} />
+        <JobList
+          page={page ? parseInt(page) : undefined}
+          filterValues={filterValues}
+        />
       </Suspense>
     </section>
   );

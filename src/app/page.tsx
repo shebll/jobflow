@@ -9,6 +9,7 @@ interface props {
     jobType?: string;
     location?: string;
     remote?: string;
+    page?: string;
   };
 }
 
@@ -42,7 +43,7 @@ export default function Home({ searchParams }: props) {
           skills, and more.
         </p>
       </div>
-      <Feed filterValues={filterValues} />
+      <Feed page={searchParams.page ?? undefined} filterValues={filterValues} />
     </main>
   );
 }
